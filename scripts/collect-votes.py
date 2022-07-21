@@ -19,7 +19,6 @@ for state in states:
 				os.chdir(section)
 				for tape in glob.glob("*.json"):
 					if (os.path.isfile("%s.txt" % tape)):
-						#print("%s.txt" % tape)
 						f = open("%s.txt" % tape, 'r')
 						pat = re.compile("[0-9][0-9]\s+[0-9][0-9][0-9][0-9]")
 						for line in f:
